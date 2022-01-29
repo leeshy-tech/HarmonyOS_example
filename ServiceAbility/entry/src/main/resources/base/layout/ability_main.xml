@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+    //四个按钮
+    <Button
+        ohos:id="$+id:btn1"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="启动服务"
+        ohos:text_size="40vp"
+        ohos:background_element="#FF8A9EB0"
+        />
+
+    <Button
+        ohos:id="$+id:btn2"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="连接服务"
+        ohos:text_size="40vp"
+        ohos:background_element="#FF8A9EB0"
+        />
+
+    <Button
+        ohos:id="$+id:btn3"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="断开连接"
+        ohos:text_size="40vp"
+        ohos:background_element="#FF8A9EB0"
+        />
+
+    <Button
+        ohos:id="$+id:btn4"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="关闭服务"
+        ohos:text_size="40vp"
+        ohos:background_element="#FF8A9EB0"
+        />
+
+</DirectionalLayout>
