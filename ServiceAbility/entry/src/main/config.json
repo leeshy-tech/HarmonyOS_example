@@ -51,6 +51,11 @@
         "description": "$string:myservice_description",
         "type": "service"
       }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING"
+      }
     ]
   }
 }

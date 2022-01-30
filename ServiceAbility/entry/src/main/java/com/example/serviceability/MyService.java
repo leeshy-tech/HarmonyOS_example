@@ -3,6 +3,7 @@ package com.example.serviceability;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.ability.LocalRemoteObject;
 import ohos.aafwk.content.Intent;
+import ohos.event.notification.NotificationRequest;
 import ohos.rpc.IRemoteObject;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
@@ -16,6 +17,15 @@ public class MyService extends Ability {
         super.onStart(intent);
         HiLog.error(LABEL_LOG, "MyService::onStart");
         System.out.println("--------------------onStart");
+        // 创建通知，其中1005为notificationId
+        NotificationRequest request = new NotificationRequest(1005);
+        NotificationRequest.NotificationNormalContent content = new NotificationRequest.NotificationNormalContent();
+        content.setTitle("title").setText("text");
+        NotificationRequest.NotificationContent notificationContent = new NotificationRequest.NotificationContent(content);
+        request.setContent(notificationContent);
+
+        // 绑定通知，1005为创建通知时传入的notificationId
+        keepBackgroundRunning(1005, request);
     }
 
     @Override
