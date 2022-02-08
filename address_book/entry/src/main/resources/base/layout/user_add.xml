@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <TextField
+        ohos:id="$+id:textField1"
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:padding="3vp"
+        ohos:text_size="15vp"
+        ohos:top_margin="10vp"
+        ohos:background_element="#aabbcc"
+        />
+    <TextField
+        ohos:id="$+id:textField2"
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:padding="3vp"
+        ohos:text_size="15vp"
+        ohos:top_margin="10vp"
+        ohos:background_element="#aabbcc"
+        />
+    <TextField
+        ohos:id="$+id:textField3"
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:padding="3vp"
+        ohos:text_size="15vp"
+        ohos:top_margin="10vp"
+        ohos:background_element="#aabbcc"
+        />
+    <Button
+        ohos:id="$+id:btn_add"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="保存联系人"
+        ohos:text_size="20vp"
+        ohos:background_element="#0aabbc"
+        ohos:padding="10vp"
+        ohos:top_margin="20vp"
+        />
+</DirectionalLayout>

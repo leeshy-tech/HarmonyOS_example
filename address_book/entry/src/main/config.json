@@ -1,0 +1,59 @@
+{
+  "app": {
+    "bundleName": "com.example.address_book",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.address_book",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.address_book.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.address_book.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.example.address_book.DataBaseAbility",
+        "icon": "$media:icon",
+        "description": "$string:databaseability_description",
+        "type": "data",
+        "uri": "dataability://com.example.address_book.DataBaseAbility"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.example.address_book.DataAbilityShellProvider.PROVIDER"
+      }
+    ]
+  }
+}
