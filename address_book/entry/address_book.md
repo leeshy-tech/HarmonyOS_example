@@ -10,3 +10,10 @@
 按钮确认添加    
 列表页面：   
 显示数据库中所有的练习人相关信息
+## 所含知识点
+1. 关系数据库
+2. 页面跳转
+3. DataAbility
+
+## 博客详解
+[鸿蒙开发实践——电话簿](https://leeshy-tech.github.io/harmonyos_addressbook/)
