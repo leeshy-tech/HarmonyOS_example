@@ -14,4 +14,8 @@
 3. 位图操作
 
 ## 博客详解
-还没写
+[鸿蒙开发实践——调用API](https://leeshy-tech.github.io/harmonyos_api/)
+
+## 注意
+若你想运行此项目，则需要在该[API官网](https://apis.baidu.com/store/detail/581576df-bc52-4e4a-8a3a-2abd6035e7ae) 获取你自己的accessKey和secretKey，并填入baiduApi.java的对应位置，否则无法正常运行  
+若只是参考代码，请忽略。  

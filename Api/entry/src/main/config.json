@@ -7,13 +7,7 @@
       "name": "1.0.0"
     }
   },
-  "deviceConfig": {
-    "default": {
-      "network": {
-        "cleartextTraffic": true
-      }
-    }
-  },
+  "deviceConfig": {},
   "module": {
     "package": "com.example.api",
     "name": ".MyApplication",

@@ -36,7 +36,7 @@ public class MainAbilitySlice extends AbilitySlice {
                 requestBody request_body = new requestBody(string,20,"L","jpg",
                         "https://apisown-test.bj.bcebos.com/qr-code-api-store.png");
                 String request_result = baiduApi.sendRequest(request_body);
-                //将字符串转换为类，取出imageUrl
+                //将JSON字符串转换为类，取出imageUrl
                 returnBody returndata = JSON.parseObject(request_result, returnBody.class);
                 String image_url = returndata.getImageUrl();
                 //将网络图片显示到image组件

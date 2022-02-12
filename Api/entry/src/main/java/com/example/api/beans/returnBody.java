@@ -1,6 +1,6 @@
 package com.example.api.beans;
 
-//API的返回类，只有一个参数
+//API的响应体类，只有一个参数
 public class returnBody {
     private String imageUrl;
 
