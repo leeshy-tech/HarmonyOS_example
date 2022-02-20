@@ -1,0 +1,76 @@
+{
+  "app": {
+    "bundleName": "com.example.users",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  "default": {
+    "network": {
+      "cleartextTraffic": true
+    }
+  }
+},
+  "module": {
+    "package": "com.example.users",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.users.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.users.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.example.users.LocalDBAbility",
+        "icon": "$media:icon",
+        "description": "$string:dataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.users.LocalDBAbility"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.example.users.DataAbilityShellProvider.PROVIDER"
+      }
+    ]
+  }
+}
